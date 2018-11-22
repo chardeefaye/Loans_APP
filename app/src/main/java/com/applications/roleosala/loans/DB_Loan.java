@@ -30,6 +30,15 @@ public class DB_Loan extends SQLiteOpenHelper {
     public static final String LN_INT = "ln_int";
     public static final String LN_DATE = "ln_date";
     public static final String LN_BAL = "ln_bal";
+    public static final String LN_TYPE = "ln_type";
+    public static final String FK_PPL_ID = "ppl_id";
+
+    //tbl_loans_line table for daily payments on said loans
+    public static final String T_LOANS_LINE = "loans_line_tbl";
+    public static final String LN_LINE_ID = "ln_loan_id";
+    public static final String LN_LINE_DATE = "ln_line_date";
+    public static final String LN_LINE_AMNT = "ln_line_amnt";
+    public static final String LN_LINE_STAT = "ln_line_stat";
 
     public DB_Loan(Context context){
         super(context, DB_NAME_LOANS, null, 1);
